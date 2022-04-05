@@ -28,7 +28,8 @@ Path_memory = './last_memory_doublebootdqn.tar'
 Test_Path_weights = './max_game_test_weights_doublebootdqn.tar'
 tensor_board_dir='./logs/train_data'
 writer = SummaryWriter(tensor_board_dir)
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = 'cpu'
+#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Device: ",device)
 
 
